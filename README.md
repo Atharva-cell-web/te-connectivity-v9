@@ -4,7 +4,7 @@
 [![Version](https://img.shields.io/badge/Release-v5.1.0--V5--Full-7916ff?style=for-the-badge&logo=rocket)](https://github.com/Vishh70/te-connectivity-3)
 [![Status](https://img.shields.io/badge/Status-Deployment--Ready-2ea44f?style=for-the-badge&logo=checkmarx)](https://github.com/Vishh70/te-connectivity-3)
 [![FastAPI](https://img.shields.io/badge/FastAPI-005863?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![Collaboration](https://img.shields.io/badge/Team-Atharva%20&%20Vishnu-orange?style=for-the-badge&logo=github)](./CONTRIBUTING.md)
+
 
 The TE Connectivity Predictive Maintenance system is a state-of-the-art solution designed to monitor, predict, and explain scrap risks across mechanical production fleets. By leveraging the **V9 Universal Oracle** and the new **Time Machine Replay Engine**, we provide operators with high-precision forecasting and the ability to audit historical scrap events with surgical precision.
 
@@ -81,21 +81,8 @@ graph LR
 
 ---
 
-## 🤝 Collaborative Workflow (Atharva & Vishnu)
 
-> [!TIP]
-> This project is designed for high-end collaboration. 
-> See the [**CONTRIBUTING.md**](./CONTRIBUTING.md) guide for details on:
-> *   Branching strategy and merge protocols.
-> *   Synchronizing local environments (Venv, Npm).
-> *   Manual data handoff (Mergedata control).
 
----
-
-## 🐋 Production Deployment (Docker)
-
-> [!TIP]
-> This project is containerized for professional, one-click deployment.
 
 ### 🚀 Quickstart: Run Development Environment
 To launch the entire suite (Backend + Frontend) simultaneously, open PowerShell in the project root and run:
