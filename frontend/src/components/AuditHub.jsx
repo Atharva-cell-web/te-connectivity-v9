@@ -355,15 +355,13 @@ export default function AuditHub({ onReplayAnomaly }) {
                 <th className="px-6 py-4 text-[9px] font-black uppercase tracking-[0.2em] text-slate-400">Date</th>
                 <th className="px-6 py-4 text-[9px] font-black uppercase tracking-[0.2em] text-slate-400">Scrap Case #</th>
                 <th className="px-6 py-4 text-[9px] font-black uppercase tracking-[0.2em] text-slate-400">Time Window</th>
-                <th className="px-6 py-4 text-[9px] font-black uppercase tracking-[0.2em] text-slate-400">Scrap predicted?</th>
-                <th className="px-6 py-4 text-[9px] font-black uppercase tracking-[0.2em] text-slate-400">Comment</th>
                 <th className="px-6 py-4 text-[9px] font-black uppercase tracking-[0.2em] text-slate-400 text-right">Actions</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
               {results.length === 0 && (
                 <tr>
-                  <td colSpan={7} className="px-6 py-20 text-center">
+                  <td colSpan={5} className="px-6 py-20 text-center">
                     <div className="flex flex-col items-center gap-3 opacity-30">
                       <Search size={40} className="text-slate-400" />
                       <p className="text-xs font-black uppercase tracking-widest text-slate-500">No Ground-Truth Records Defined</p>
@@ -389,27 +387,6 @@ export default function AuditHub({ onReplayAnomaly }) {
                         <ChevronRight size={12} className="text-slate-300" />
                         <span className="text-[11px] font-bold text-slate-800">{row.end}</span>
                       </div>
-                    </td>
-                    <td className="px-6 py-5">
-                      {isIgnore ? (
-                        <span className="text-[11px] font-black text-slate-300 uppercase tracking-widest italic flex items-center gap-1.5">
-                          <XCircle size={12} /> Ignored
-                        </span>
-                      ) : (
-                        <div className="flex flex-col gap-1">
-                          <span className={`text-[13px] font-black uppercase tracking-wider ${row.predicted === 'YES' ? 'text-emerald-600' : 'text-red-500'}`}>
-                            {row.predicted}
-                          </span>
-                          <span className="text-[9px] font-bold text-slate-400 opacity-60 uppercase tracking-tighter">
-                            Risk: {(row.max_risk * 100).toFixed(1)}%
-                          </span>
-                        </div>
-                      )}
-                    </td>
-                    <td className="px-6 py-5 max-w-xs">
-                      <p className="text-[10px] font-medium leading-relaxed text-slate-500 italic line-clamp-2" title={row.comment}>
-                        {row.comment || "—"}
-                      </p>
                     </td>
                     <td className="px-6 py-5 text-right">
                       <div className="flex items-center justify-end gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
